@@ -1,0 +1,1 @@
+# QuickCart – Mini E-Commerce Mock App
