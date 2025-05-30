@@ -1,8 +1,6 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import testimonials from '../../data/testimonials';
-import left from '../../assets/left.svg';
-import right from '../../assets/right.svg';
 import green from '../../assets/green.png';
 import mail from '../../assets/mail.svg';
 
