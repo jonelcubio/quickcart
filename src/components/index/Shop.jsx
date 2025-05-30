@@ -5,7 +5,7 @@ import green from '../../assets/green.png';
 import mail from '../../assets/mail.svg';
 
 
-export function IndexShop() {
+export function Shop() {
   const [data, setData] = useState([]);
 
   {/* Fetch data from the API when the component mounts */

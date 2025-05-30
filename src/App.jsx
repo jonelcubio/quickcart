@@ -1,13 +1,13 @@
 import { Header } from "./components/index/Header";
 import { Hero } from "./components/index/Hero";
-import { IndexShop } from "./components/index/indexShop";
+import { Shop } from "./components/index/Shop";
 
 export function App() {
   return(
     <>
     <Header />
     <Hero />
-    <IndexShop />
+    <Shop />
     </>
   );
 }
