@@ -2,7 +2,7 @@
 
 
 .header-uppertop-con {
-  @apply bg-black text-white flex items-center justify-center px-4 py-1.5 font-thin text-sm gap-2.5;
+  @apply bg-black text-white flex flex-row items-center justify-center px-4 py-1.5 font-thin text-sm gap-2.5 fixed top-0 left-0 z-50 w-full;
 }
 
 .header-uppertop-underline {
@@ -11,11 +11,11 @@
 }
 
 .header-nav-con {
-  @apply bg-white text-black flex items-center py-2.5 mx-30 fixed top-9 left-0 right-0 z-50 w-full gap-9;
+  @apply bg-white text-black flex items-center py-2.5  fixed top-8 right-0 z-50 w-full gap-7;
 }
 
 .header-brand {
-  @apply text-3xl font-black pr-0 hover:underline hover:cursor-pointer;
+  @apply text-3xl font-black ml-29 mr-5 hover:underline hover:cursor-pointer;
   @apply active:opacity-75;
 }
 
@@ -82,4 +82,124 @@
 
 .hero-stats-text {
   @apply text-base font-thin text-gray-600;
+}
+
+.indexShop-image {
+  @apply w-45 h-50 bg-gray-100
+}
+
+.header-profile-con {
+  @apply mr-20;
+}
+
+.indexShop-main {
+  @apply my-50;
+}
+
+.indexShop-category-title {
+  @apply text-4xl mb-20 text-center font-black;
+}
+
+.indexShop-category-title-con {
+  @apply my-20;
+}
+
+.indexShop-products-con {
+ @apply grid grid-cols-4 gap-10 mx-20 px-8 justify-center items-center;
+}
+
+.indexShop-product-image {
+  @apply mb-10 justify-center items-center flex;
+}
+
+.indexShop-viewall {
+  @apply text-center text-sm font-semibold py-2 px-5 flex items-center justify-center gap-2 mx-auto w-fit mt-5;
+  @apply hover:bg-gray-200 hover:cursor-pointer hover:rounded-full;
+  @apply active:opacity-75;
+}
+
+/*Yung truncate ay para maglagay ng elipsis (...)*/
+.indexShop-product-title {
+  @apply text-base font-semibold mb-2 truncate overflow-hidden whitespace-nowrap;
+}
+
+.indexShop-product-rating {
+  @apply text-sm font-thin mb-2;
+}
+
+.indexShop-product-price {
+  @apply text-xl font-bold mb-2;
+}
+
+.title {
+  @apply mt-52;
+}
+
+.category-flex {
+ @apply my-20;
+}
+
+.happy-customers {
+  @apply text-4xl mb-20 text-center font-black;
+}
+
+.indexShop-testimonials-con {
+  @apply grid grid-cols-5 gap-10 mx-20 px-8 justify-center items-center;
+  @apply hover:cursor-pointer;
+}
+
+.indexShop-testimonials-list {
+  @apply hover:bg-gray-300 hover:rounded-lg hover:shadow-md p-5;
+  @apply transition duration-300 ease-in-out;
+}
+
+.indexShop-testimonials-name-list {
+  @apply flex flex-row gap-2 py-3
+}
+
+.indexShop-testimonials-name {
+  @apply text-sm font-semibold;
+}
+
+.indexShop-testimonials-check {
+  @apply w-6;
+}
+
+.indexShop-testimonials-message {
+  @apply text-sm font-thin text-gray-600;
+}
+
+.indexShop-products-list {
+  @apply hover:bg-gray-200 hover:rounded-lg hover:shadow-md p-5 hover:cursor-pointer;
+  @apply transition duration-300 ease-in-out;
+  @apply active:opacity-75
+}
+
+.indexShop-latest-list {
+  @apply my-30 mx-20 flex gap-70 items-center bg-black text-white px-10 py-5 rounded-lg;
+}
+
+.indexShop-latest-title {
+  @apply text-4xl font-black;
+}
+
+.indexShop-input {
+  @apply w-90;
+}
+
+.indexShop-input-list {
+  @apply flex items-center justify-between bg-white text-black px-5 py-2 rounded-full gap-3 mb-2.5;
+}
+
+.indexShop-input::placeholder{
+  @apply text-base font-thin; 
+}
+
+.indexShop-input:focus {
+  @apply outline-none;
+}
+
+.indexShop-button {
+  @apply bg-white text-black px-5 py-2 rounded-full font-semibold text-base hover:opacity-90 hover:cursor-pointer w-110;
+  @apply active:opacity-75;
 }
