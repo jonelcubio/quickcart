@@ -1,1 +1,85 @@
 @import "tailwindcss";
+
+
+.header-uppertop-con {
+  @apply bg-black text-white flex items-center justify-center px-4 py-1.5 font-thin text-sm gap-2.5;
+}
+
+.header-uppertop-underline {
+  @apply underline hover:opacity-90 hover:cursor-pointer;
+  @apply active:opacity-75
+}
+
+.header-nav-con {
+  @apply bg-white text-black flex items-center py-2.5 mx-30 fixed top-9 left-0 right-0 z-50 w-full gap-9;
+}
+
+.header-brand {
+  @apply text-3xl font-black pr-0 hover:underline hover:cursor-pointer;
+  @apply active:opacity-75;
+}
+
+.header-nav-links {
+  @apply hover:underline hover:cursor-pointer;
+  @apply active:opacity-75;
+}
+
+.header-search-list {
+  @apply bg-gray-100 flex items-center justify-between px-2 pl-6 py-1.5 rounded-md gap-2 shrink;
+  @apply hover:cursor-pointer;
+}
+
+.header-search-input {
+  @apply w-110
+}
+
+.header-search-input:focus {
+  @apply outline-none;
+}
+
+.header-search-input::placeholder {
+  @apply text-base font-thin; 
+}
+
+.header-cart-con {
+  @apply ml-0
+}
+
+.header-cart, .header-profile {
+  @apply hover:bg-gray-200 hover:cursor-pointer py-2 px-2 rounded-full;
+  @apply active:opacity-75;
+}
+
+
+.hero-con {
+  @apply mt-52 mx-30;
+}
+
+.hero-text {
+  @apply text-6xl font-black text-center mb-4;
+}
+
+.hero-des {
+@apply text-wrap text-base font-thin pt-3 text-gray-600
+}
+
+.hero-button-con {
+  @apply mt-5;
+}
+
+.hero-button {
+  @apply bg-black text-white px-10 py-2 rounded-full font-normal text-sm hover:opacity-90 hover:cursor-pointer;
+  @apply active:opacity-75;
+}
+
+.hero-stats-con {
+  @apply flex mt-12 gap-10;
+}
+
+.hero-stats-num {
+  @apply text-4xl font-bold;
+}
+
+.hero-stats-text {
+  @apply text-base font-thin text-gray-600;
+}
