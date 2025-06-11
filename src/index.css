@@ -203,3 +203,49 @@
   @apply bg-white text-black px-5 py-2 rounded-full font-semibold text-base hover:opacity-90 hover:cursor-pointer w-110;
   @apply active:opacity-75;
 }
+
+.header-img {
+  @apply w-12 h-12;
+}
+
+.prefooter-con {
+  @apply flex flex-row items-center justify-evenly px-20 py-10;
+}
+
+.prefooter-brand-socials {
+  @apply flex flex-row items-center gap-5;
+}
+
+.prefooter-social-icon {
+  @apply w-5 h-8 text-gray-600 hover:text-black hover:cursor-pointer;
+  @apply active:opacity-75;
+}
+
+.prefooter-con {
+  @apply py-12 px-0 
+}
+
+.prefooter-brand-subtitle {
+  @apply text-base font-thin text-gray-600 py-5 wrap-break-word;
+}
+
+.prefooter-brand-title {
+  @apply text-3xl font-black;
+}
+
+.prefooter-company-title, .prefooter-help-title, .prefooter-faq-title, .prefooter-resources-title {
+  @apply font-semibold text-lg mb-2 tracking-wide;
+}
+
+.prefooter-company-list, .prefooter-help-list, .prefooter-faq-list, .prefooter-resources-list{
+  @apply text-base font-thin text-gray-600 mb-2;
+}
+
+.prefooter-company-item, .prefooter-help-item, .prefooter-faq-item, .prefooter-resources-item {
+  @apply hover:underline hover:cursor-pointer;
+  @apply active:opacity-75;
+}
+
+.footer-footer {
+  @apply bg-black text-white text-center py-5;
+}

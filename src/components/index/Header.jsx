@@ -1,6 +1,7 @@
 import search from '../../assets/search.svg';
 import cart from '../../assets/cart.svg';
 import profile from '../../assets/profile.svg';
+import cartBlack from '../../assets/black.svg';
 
 
 export function Header() {
@@ -13,7 +14,9 @@ export function Header() {
       </div>
 
       <div className="header-nav-con">
-        <div className="header-brand">QUICKCART</div>
+        <a href="/"><div className="header-brand">
+          <img src={cartBlack} alt="QUICKCART" className="header-img" />
+        </div></a>
 
         <div className="header-nav-links">Shop</div>
         <div className="header-nav-links">On Sale</div>
