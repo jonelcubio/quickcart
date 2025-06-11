@@ -2,9 +2,20 @@ import search from '../../assets/search.svg';
 import cart from '../../assets/cart.svg';
 import profile from '../../assets/profile.svg';
 import cartBlack from '../../assets/black.svg';
+import { use, useState } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa';
+
 
 
 export function Header() {
+
+  const [isDark, setIsDark] = useState(false);
+  const toggleDarkMode = () => {
+    setIsDark(!isDark);
+    document.body.className = isDark ? 'light-mode' : 'dark-mode';
+
+  };
+
   return(
     <main className="header-main">
 
@@ -40,6 +51,14 @@ export function Header() {
 
         <div className="header-profile-con">
             <img src={profile} alt="Profile" className='header-profile' />
+        </div>
+
+        {/* Dark Mode Toggle */}
+        <div className="header-darkmode-toggle">
+         <FaMoon color={isDark ? 'white' : 'black'} size={20} onClick={toggleDarkMode} className="header-darkmode-icon" />
+
+         <FaSun color={isDark ? 'white' : 'black'} size={20} onClick={toggleDarkMode} className="header-darkmode-icon" />
+          
         </div>
         
       </div>

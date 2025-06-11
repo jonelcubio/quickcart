@@ -94,6 +94,7 @@
 
 .indexShop-main {
   @apply my-50;
+  @apply dark:bg-gray-900 dark:text-white;
 }
 
 .indexShop-category-title {
@@ -248,4 +249,12 @@
 
 .footer-footer {
   @apply bg-black text-white text-center py-5;
+}
+
+.header-darkmode-icon {
+  @apply cursor-pointer; 
+}
+
+.header-darkmode-toggle {
+  @apply flex flex-row items-center justify-center gap-2;
 }
