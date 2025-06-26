@@ -1,26 +1,32 @@
-import { Header } from "./components/index/Header";
-import { Hero } from "./components/index/Hero";
-import { Shop } from "./components/index/Shop";
-import { PreFooter } from "./components/index/PreFooter";
-import { Footer } from "./components/index/Footer";
-import {Routes, Route} from 'react-router-dom';
-import { ShopItem } from "./components/shop/ShopItem";
-
+import { Header } from "./components/index/Header.jsx";
+import { Route, Routes } from "react-router-dom";
+import { Hero } from "./components/index/Hero.jsx";
+import { Shop } from "./components/index/Shop.jsx";
+import { PreFooter } from "./components/index/PreFooter.jsx";
+import { Footer } from "./components/index/Footer.jsx";
+import {ShopItem} from "./components/shop/ShopItem.jsx";
 
 
 export function App() {
   return(
     <>
     <Header />
-    <Hero />
-    <Shop />
-    <PreFooter />
-    <Footer />
 
     <Routes>
-      <Route path="/" element={<Shop />} />
-        <Route path="/shop/:id" element={<ShopItem />} />
+      {/* Homepage */}
+      <Route path="/" element={
+        <>
+          <Hero />
+          <Shop />
+          <PreFooter />
+        </>
+      } />
+
+      {/* Shop Page */}
+      <Route path="/shop/:id" element={<ShopItem />} />
     </Routes>
+
+    <Footer />
     </>
   );
 
