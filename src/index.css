@@ -94,7 +94,6 @@
 
 .indexShop-main {
   @apply my-50;
-  @apply dark:bg-gray-900 dark:text-white;
 }
 
 .indexShop-category-title {
