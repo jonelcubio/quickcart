@@ -3,6 +3,7 @@ import axios from 'axios';
 import testimonials from '../../data/testimonials';
 import green from '../../assets/green.png';
 import mail from '../../assets/mail.svg';
+import { Link } from 'react-router-dom';
 
 
 export function Shop() {
@@ -49,7 +50,8 @@ export function Shop() {
 
         <div className="indexShop-products-con">
         {data.slice(5,9).map((item => (
-          <div className="indexShop-products-list" key={item.id}>
+          <Link to={`/shop/${item.id}`} key={item.id}>
+          <div className="indexShop-products-list">
             <div className="indexShop-product-image">
               <img src={item.image} alt={item.title} className="indexShop-image"/>
             </div>
@@ -58,9 +60,11 @@ export function Shop() {
             <div className="indexShop-product-rating">{item.rating.rate}⭐</div>
             <div className="indexShop-product-price">${item.price}</div>
           </div>
+          </Link>
         )
         ))}
       </div>
+     
 
       <div className="indexShop-viewall">View All</div>
 
