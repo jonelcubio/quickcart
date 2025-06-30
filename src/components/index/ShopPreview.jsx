@@ -5,7 +5,7 @@ import green from '../../assets/green.png';
 import mail from '../../assets/mail.svg';
 import { Link } from 'react-router-dom';
 
-export function Shop() {
+export function ShopPreview() {
   const [data, setData] = useState([]);
 
   // Fetch data from the API when the component mounts
@@ -28,8 +28,8 @@ export function Shop() {
 
       <div className="indexShop-products-con">
         {data.slice(0, 4).map(item => (
-          <Link to={`/shop/${item.id}`} key={item.id}>
-            <div className="indexShop-products-list">
+        
+            <div className="indexShop-products-list" key={item.id}>
               <div className="indexShop-product-image">
                 <img src={item.image} alt={item.title} className="indexShop-image" />
               </div>
@@ -37,18 +37,18 @@ export function Shop() {
               <div className="indexShop-product-rating">{item.rating.rate}⭐</div>
               <div className="indexShop-product-price">${item.price}</div>
             </div>
-          </Link>
+        
         ))}
       </div>
 
-      <div className="indexShop-viewall">View All</div>
+      <Link to="/shop"><div className="indexShop-viewall">View All</div></Link>
 
       <div className="indexShop-category-title-con">
         <div className="indexShop-category-title title">TOP SELLING</div>
         <div className="indexShop-products-con">
           {data.slice(5, 9).map(item => (
-            <Link to={`/shop/${item.id}`} key={item.id}>
-              <div className="indexShop-products-list">
+            
+              <div className="indexShop-products-list" key={item.id}>
                 <div className="indexShop-product-image">
                   <img src={item.image} alt={item.title} className="indexShop-image" />
                 </div>
@@ -56,12 +56,12 @@ export function Shop() {
                 <div className="indexShop-product-rating">{item.rating.rate}⭐</div>
                 <div className="indexShop-product-price">${item.price}</div>
               </div>
-            </Link>
+            
           ))}
         </div>
       </div>
 
-      <div className="indexShop-viewall">View All</div>
+      <Link to="/shop"><div className="indexShop-viewall">View All</div></Link>
 
       <div className="category-flex">
         <div className="title happy-customers">OUR HAPPY CUSTOMERS</div>

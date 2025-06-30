@@ -257,3 +257,39 @@
 .header-darkmode-toggle {
   @apply flex flex-row items-center justify-center gap-2;
 }
+
+.filters-main {
+  @apply mx-30 w-70;
+}
+
+.filter-con {
+  @apply flex flex-row items-center justify-between px-5 py-2.5 bg-gray-100 rounded-lg;
+}
+
+.filter-name {
+  @apply text-lg font-semibold
+}
+
+.filter-img-con {
+  @apply hover:cursor-pointer hover:bg-gray-300 rounded-full py-2 px-2;
+}
+
+.filter-img, .foptions-img, .shop-link-img{
+  @apply w-5;
+}
+
+.filter-options-con {
+  @apply flex flex-col items-start px-4 py-2 bg-gray-100 rounded-lg mt-2;
+}
+
+.foptions-list {
+  @apply text-base text-gray-600 hover:underline hover:cursor-pointer active:opacity-75;
+}
+
+.shop-con {
+  @apply mx-30 mt-40 mb-10 flex flex-row items-start gap-2;
+}
+
+.shop-list {
+  @apply text-sm text-gray-600 hover:underline hover:cursor-pointer;
+}

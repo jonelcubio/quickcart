@@ -24,7 +24,7 @@ export function Header() {
           <img src={cartBlack} alt="QUICKCART" className="header-img" /></Link>
         </div></a>
 
-        <div className="header-nav-links">Shop</div>
+        <Link to="/shop"><div className="header-nav-links">Shop</div></Link>
         <div className="header-nav-links">On Sale</div>
         <div className="header-nav-links">New Arrivals</div>
         <div className="header-nav-links">Brands</div>

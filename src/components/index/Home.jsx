@@ -1,6 +1,6 @@
 import { Header } from "./Header"
 import { Hero } from "./Hero"
-import { Shop } from "./Shop"
+import { ShopPreview } from "./ShopPreview"
 import { PreFooter } from "./PreFooter"
 import { Footer } from "./Footer"
 
@@ -9,7 +9,7 @@ export function Home() {
     <>
       <Header />
       <Hero />
-      <Shop />
+      <ShopPreview />
       <PreFooter />
       <Footer />
     </>

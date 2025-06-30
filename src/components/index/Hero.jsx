@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return(
@@ -9,7 +9,7 @@ export function Hero() {
         <div className="hero-des">Browse through diverse range of meticulously crafted items, designed<br></br> to bring out your individuality to your sense of style.</div>
 
         <div className="hero-button-con">
-          <button className="hero-button">Shop Now</button>
+          <Link to="/shop"><button className="hero-button">Shop Now</button></Link>
         </div>
 
 
