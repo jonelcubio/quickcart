@@ -3,7 +3,7 @@
 QuickCart is a simple and responsive e-commerce web app built with React. It allows users to browse products, view product details, and manage a shopping cart – all powered by a fake product API. This project was created in 3 days to practice **React Hooks** and **React Router**.
 
 ## 🚀 Live Demo
-👉 [Visit the Live Site](https://quickcart-seven.vercel.app/) *(update this when deployed)*
+👉 [Visit the Live Site](https://quickcart-seven.vercel.app/) 
 
 ---
 
