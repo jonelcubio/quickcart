@@ -2,6 +2,7 @@ import search from '../../assets/search.svg';
 import cart from '../../assets/cart.svg';
 import profile from '../../assets/profile.svg';
 import cartBlack from '../../assets/black.svg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,10 +20,11 @@ export function Header() {
 
       <div className="header-nav-con">
         <a href="/"><div className="header-brand">
-          <img src={cartBlack} alt="QUICKCART" className="header-img" />
+          <Link to="/">
+          <img src={cartBlack} alt="QUICKCART" className="header-img" /></Link>
         </div></a>
 
-        <div className="header-nav-links">Shop</div>
+        <Link to="/shop"><div className="header-nav-links">Shop</div></Link>
         <div className="header-nav-links">On Sale</div>
         <div className="header-nav-links">New Arrivals</div>
         <div className="header-nav-links">Brands</div>

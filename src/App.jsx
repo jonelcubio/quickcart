@@ -1,17 +1,16 @@
-import { Header } from "./components/index/Header";
-import { Hero } from "./components/index/Hero";
-import { Shop } from "./components/index/Shop";
-import { PreFooter } from "./components/index/PreFooter";
-import { Footer } from "./components/index/Footer";
+import { Home } from "./components/index/Home";
+import { ShopPreview } from "./components/index/ShopPreview";
+import { Shop } from "./components/shop/Shop";
+import {Routes, Route} from "react-router-dom"
+
 
 export function App() {
   return(
-    <>
-    <Header />
-    <Hero />
-    <Shop />
-    <PreFooter />
-    <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/shop" element={<Shop />} />
+      {/* Add more routes here as needed */}
+    </Routes>
   );
+
 }
