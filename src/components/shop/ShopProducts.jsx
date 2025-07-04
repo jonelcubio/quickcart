@@ -24,9 +24,10 @@ export function ShopProducts() {
     <div className="shopproducts-title-con">
       <div className="shopproducts-show">Showing 1-9 of {data.length} Products</div>
 
+      <div className="shopproducts-sort-title">Sort by:</div>
       <div className="shopproducts-sort-con">
         <select className="shopproducts-sort-select">
-          <option value="mostPopular">Featured</option>
+          <option value="mostPopular">Most Popular</option>
           <option value="rating">Rating</option>
           <option value="lowest-price">Lowest Price</option>
         </select>
@@ -34,10 +35,10 @@ export function ShopProducts() {
     </div>
 
     <div className="shopproducts-con">
-      {data.slice(0, 9).map(item => (
+      {data.slice(0, 10).map(item => (
       <div className="shopproducts-list" key={item.id}>
         <div className="shopproducts-img-con">
-          <img src={item.image} alt={item.title} className="indexShop-image" loading="lazy"/>
+          <img src={item.image} alt={item.title} className="indexShop-image-shopproducts" loading="lazy"/>
         </div>
 
         <div className="shopproducts-title">{item.title}</div>
