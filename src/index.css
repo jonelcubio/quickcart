@@ -85,7 +85,9 @@
 }
 
 .indexShop-image {
-  @apply w-45 h-50 bg-gray-100
+  @apply w-45 h-50 bg-gray-100; 
+  @apply transition duration-300 ease-in-out;
+  @apply active:opacity-75;  
 }
 
 .header-profile-con {
@@ -123,11 +125,11 @@
   @apply text-base font-semibold mb-2 truncate overflow-hidden whitespace-nowrap;
 }
 
-.indexShop-product-rating {
+.indexShop-product-rating, .shopproducts-rating {
   @apply text-sm font-thin mb-2;
 }
 
-.indexShop-product-price {
+.indexShop-product-price, .shopproducts-price {
   @apply text-xl font-bold mb-2;
 }
 
@@ -266,7 +268,7 @@
   @apply flex flex-row items-center justify-between px-5 py-2.5 bg-gray-100 rounded-lg;
 }
 
-.filter-name {
+.filter-name, .filter-slider-title, .colors-options-title {
   @apply text-lg font-semibold
 }
 
@@ -292,4 +294,117 @@
 
 .shop-list {
   @apply text-sm text-gray-600 hover:underline hover:cursor-pointer;
+}
+
+.shopproducts-main {
+  @apply border border-black w-350;
+}
+
+.shopproducts-con {
+  @apply grid grid-cols-3 gap-10 mx-20 px-8 py-5 justify-center items-center;
+}
+
+.shopproducts-list {
+  @apply hover:bg-gray-200 hover:rounded-lg hover:shadow-md p-5 hover:cursor-pointer;
+  @apply transition duration-300 ease-in-out;
+}
+
+.shop-flex {
+  @apply flex flex-row my-10;
+}
+
+.shopproducts-title {
+  @apply text-lg font-semibold mb-2 truncate overflow-hidden whitespace-nowrap pt-5;
+}
+
+.filter-slider-title, .colors-options-title {
+  @apply pt-5 pl-5;
+}
+
+.filter-slider {
+  @apply w-full h-2 bg-black rounded-lg appearance-none cursor-pointer;
+}
+
+.filter-slider-value {
+  @apply text-lg font-thin text-gray-600 text-center py-2;
+}
+
+/* Custom style for the slider thumb */
+.filter-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: black; /* Tailwind green-500 */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid black; /* Tailwind green-600 */
+  transition: background 0.2s;
+}
+
+.filter-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid black;
+  transition: background 0.2s;
+}
+
+.filter-slider::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid black;
+  transition: background 0.2s;
+}
+
+.colors-options-list {
+  @apply grid grid-cols-3 gap-2 mt-2;
+}
+
+
+.foptions-list-green, .foptions-list-red, .foptions-list-yellow, .foptions-list-orange, .foptions-list-skyblue, .foptions-list-blue, .foptions-list-violet, .foptions-list-pink, .foptions-list-white, .foptions-list-black {
+  @apply w-15 bg-green-500;
+  @apply hover:cursor-pointer hover:opacity-90;
+  @apply active:opacity-75;
+}
+
+.foptions-list-red {
+  @apply bg-red-500;
+}
+
+.foptions-list-yellow {
+  @apply bg-yellow-500;
+}
+
+.foptions-list-orange {
+  @apply bg-orange-500;
+}
+
+.foptions-list-skyblue {
+  @apply bg-blue-400;
+}
+
+.foptions-list-blue {
+  @apply bg-blue-500;
+}
+
+.foptions-list-violet {
+  @apply bg-violet-500;
+}
+
+.foptions-list-pink {
+  @apply bg-pink-500;
+}
+
+.foptions-list-white {
+  @apply bg-white;
+}
+
+.foptions-list-black {
+  @apply bg-black;
 }
