@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import { ShopProducts } from "./ShopProducts.jsx";
 import { ShopBreadcrumbs } from "./ShopBreadcrumbs.jsx";
 
+
 export function Shop() {
+
   return(
    
       <>

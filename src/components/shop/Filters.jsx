@@ -53,6 +53,10 @@ export function Filters(){
           </div>
         </div>
 
+        <div className="apply-filter-con">
+          <button className="apply-filter-btn">Apply Filters</button>
+        </div>
+
     </main>
   );
 }

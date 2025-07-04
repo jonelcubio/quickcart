@@ -408,3 +408,17 @@
 .foptions-list-black {
   @apply bg-black;
 }
+
+.apply-filter-con {
+  @apply my-8 bg-black text-white px-5 py-2 rounded-full w-fit mx-auto cursor-pointer;
+}
+
+.apply-filter-btn {
+  @apply bg-black text-white px-3 py-1 rounded-full;
+  @apply hover:cursor-pointer hover:opacity-80;
+  @apply active:opacity-75;
+}
+
+.shopproducts-title-con {
+  @apply flex flex-row items-end justify-end px-5 py-2.5 gap-7 bg-gray-100 rounded-lg;
+}
